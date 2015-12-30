@@ -1,7 +1,7 @@
 'use strict';
 
-import webpack from 'webpack';
-import WebpackDevServer from 'webpack-dev-server';
+var webpack = require('webpack');
+var WebpackDevServer = require('webpack-dev-server');
 
 const HOST = 'localhost';
 const PORT = 8080;
@@ -9,9 +9,7 @@ const NAME = 'webpack-dev-server';
 
 module.exports = function webpackDev(gulp, plugins) {
 	gulp.task('webpack-dev', () => {
-		var compiler = webpack({
-
-		});
+		var compiler = webpack(require('../webpack.config'));
 
 		new WebpackDevServer(compiler, {
 

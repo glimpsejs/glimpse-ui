@@ -1,7 +1,5 @@
-import gulp from 'gulp';
-import gplugins from 'gulp-load-plugins';
-
-const plugins = gplugins();
+var gulp = require('gulp');
+var plugins = require('gulp-load-plugins')();
 
 require('fs').readdirSync('./gulp').forEach((file) => {
 	if (require('path').extname(file) === '.js') {

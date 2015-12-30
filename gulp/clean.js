@@ -1,7 +1,7 @@
 'use strict';
 
-import rimraf from 'rimraf';
-import path from 'path';
+var rimraf = require('rimraf');
+var path = require('path');
 
 module.exports = function(gulp, plugins) {
 	gulp.task('clean', (done) => {

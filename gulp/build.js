@@ -1,7 +1,7 @@
 'use strict';
 
-import mkdirp from 'mkdirp';
-import path from 'path';
+var mkdirp = require('mkdirp');
+var path = require('path');
 
 module.exports = function build(gulp, plugins) {
 	gulp.task('build', ['clean'], (done) => {
