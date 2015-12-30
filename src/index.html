@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Glimpse</title>
+
+    <script async="true" src="https://use.edgefonts.net/source-code-pro.js"></script>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 header">
+                <div class="logo-container">
+                    <img class="logo eye" src="assets/svg/eye.svg">
+                    <img class="logo eyelid" src="assets/svg/eyelid.svg">
+                </div>
+                <h1>Glimpse</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container-fluid controls">
+        <div class="row">
+            <div class="col-sm-12">
+                <button id="seekstart" type="button" class="btn btn-secondary  btn-sm">Seek Start</button>
+                <button id="stepback" type="button" class="btn btn-info btn-sm">Stepback</button>
+                <button id="pause" type="button" class="btn btn-danger btn-sm">Pause</button>
+                <button id="step" type="button" class="btn btn-warning btn-sm">Step</button>
+                <button id="run" type="button" class="btn btn-primary btn-sm">Run</button>
+                <button id="seekend" type="button" class="btn btn-primary btn-sm">Seek End</button>
+            </div>
+            <div>
+                evaluation step#:
+                <span id="seekpos"></span>
+            </div>
+        </div>
+    </div>
+    <pre id="editor" class="source-code"></pre>
+    <div class="container-fluid slider">
+        <div class="row">
+            <div class="col-sm-10">
+                <input id="timeout" name="timeout" type="range" class="form-control" value="0" min="0" max="1000">
+            </div>
+            <div class="col-sm-2">
+                <label id="timeoutLabel" for="timeout"></label>
+            </div>
+        </div>
+    </div>
+    <div class="output">
+        <div class="reset-container">
+            <button id="reset" type="button" class="btn btn-default-outline btn-sm reset">Reset</button>
+        </div>
+        <div id="output" class="source-code"></div>
+
+    </div>
+</main>
+
+<footer class="container-fluid">
+    <pre id="status" class="source-code"></pre>
+</footer>
+
+<script src="bundle.js"></script>
+
+</body>
+</html>

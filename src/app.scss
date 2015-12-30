@@ -1,0 +1,157 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  height: 75px;
+  box-sizing: border-box;
+
+  .logo-container {
+    display: inline;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+  }
+
+  h1 {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 5px;
+    float: right;
+  }
+}
+
+.header {
+  padding: 10px;
+}
+
+footer {
+  position: absolute;
+  height: 55px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.source-code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+main {
+  position: relative;
+  height: 100%;
+}
+
+.output {
+  padding: 10px;
+  background-color: #4e4e4e;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100% - 130px);
+  width: 50%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#output {
+  position: absolute;
+  height: calc(100% - 180px);
+  width: 100%;
+  box-sizing: border-box;
+  color: lightcoral;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+}
+
+.reset-container {
+  height: 50px;
+}
+
+.reset {
+  background-color: transparent;
+  outline: white;
+  color: white;
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+}
+
+.slider{
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  height: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+#editor {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  bottom: 50px;
+  height: calc(100% - 230px);
+  width: 50%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+pre.function-output {
+  color: white;
+}
+
+fieldset.scope-container {
+  margin: 15px;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.eye {
+  -webkit-animation: barrelRoll 8s infinite linear;
+  animation: barrelRoll 8s infinite linear;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.eye:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.step:nth-child(odd) {
+  color: lightsalmon;
+}
+
+@-webkit-keyframes barrelRoll {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}

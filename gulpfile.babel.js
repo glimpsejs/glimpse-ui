@@ -1,19 +1,16 @@
 var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
 
 require('fs').readdirSync('./gulp').forEach((file) => {
 	if (require('path').extname(file) === '.js') {
-		require(`./gulp/${file}`)(gulp, plugins);
+		require(`./gulp/${file}`)(
+				gulp,
+				require('gulp-load-plugins')()
+		);
 	}
-});
-
-gulp.task('default', () => {
-	console.info('gulp!');
 });
 
 process.on('uncaughtException', (err) => {
 	if (err) {
-		plugins.util.log(err);
 		console.trace(err);
 	}
 });
