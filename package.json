@@ -1,0 +1,39 @@
+{
+  "name": "glimpse-ui",
+  "version": "1.0.0",
+  "description": "UI Tool for visualizing Javascript interpretation",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glimpsejs/glimpse-ui.git"
+  },
+  "author": "Justin Beaudry <beaudry.justin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glimpsejs/glimpse-ui/issues"
+  },
+  "homepage": "https://github.com/glimpsejs/glimpse-ui#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "conventional-changelog": "^0.5.1",
+    "css-loader": "^0.23.0",
+    "gulp": "^3.9.0",
+    "gulp-conventional-changelog": "^0.7.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-util": "^3.0.7",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
